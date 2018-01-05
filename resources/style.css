@@ -1,0 +1,219 @@
+body {
+	font-family: "Montserrat";
+	color: #464646;
+	background-color: #FFFFF7;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* Nav styling */
+
+.sticky-nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+	position: fixed;
+	background-color: #FFFFF7;
+}
+
+.logo {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+}
+
+.logo span {
+	color: #9B9B9B;
+}
+
+.logo span strong {
+	color: #4A4A4A;
+}
+
+.main-nav {
+	padding-right: 24px;
+}
+
+.main-nav ul {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+}
+
+.nav-item {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+	list-style-position: inside;
+    border-bottom: 2px solid #FFFFF7;
+    transition: border 0.2s ease-out,
+    color 0.2s ease-out,
+    padding 0.2s ease-out;
+}
+
+.nav-item:hover {
+	padding: 3px 0;
+	border-bottom: 2px solid #464646;
+}
+
+/* Hero styles */
+
+.hero {
+	display: flex;
+	align-items: center;
+	background-color: #73AFD3;
+	width: 100%;
+	padding: 32px 24px;
+}
+
+.hero-image {
+	width: 60%;
+}
+
+.hero-image img {
+	width: 100%;
+}
+
+.start-here {
+	padding-left: 24px;
+	width: 33%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-text h1 {
+	font-weight: 700;
+	font-size: 2.5rem;
+	padding-bottom: 24px;
+	line-height: 1.2;
+}
+
+.hero-text h3 {
+	font-weight: 700;
+	font-size: 20px;
+	padding-bottom: 24px;
+	line-height: 1.5;
+}
+
+.start-cta {
+	text-align: center;
+	padding: 8px 0;
+	width: 22rem;
+	background-color: #246288;
+	border-radius: 4px;
+	transition-duration: 400ms;
+	box-shadow: -1px -1px 1px 1px #4888AC;
+}
+
+.start-cta:hover {
+	box-shadow: -6px -6px 8px 1px #4888AC;
+	transform: translate(6px, 6px);
+}
+
+.start-cta a {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 16px 0;
+	color: white;
+	text-decoration: none;
+}
+
+/* Main content styles */
+
+.content {
+	padding-top: 64px;
+}
+
+/* Info styles */
+
+.information {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.practice {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 24px;
+}
+
+.practice div img {
+	width: 100%;
+}
+
+.practice div {
+	margin: 32px 24px;
+	width: 100%;
+}
+
+.practice-text {
+	font-family: "Montserrat";
+}
+
+.practice-text h2 {
+	padding-bottom: 24px;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.practice-text p {
+	line-height: 1.5;
+}
+
+.emanuel {
+	padding-top: 30px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+/* Styles for info cards */
+
+.practice-info {
+	width: 40%;
+	margin-left: 24px;
+	margin-top: 32px;
+}
+
+.info-card {
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info-card:hover {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),
+	0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.info-card-image {
+	margin: 1rem;
+	width: 35%;
+	height: auto;
+}
+
+.info-card-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.info-card-text {
+	width: 65%;
+}
+
+.read-more {
+	margin-top: 1rem;
+}
