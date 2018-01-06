@@ -68,7 +68,7 @@ strong {
 	display: flex;
 	align-items: center;
 	background-color: #73AFD3;
-	width: 100%;
+	width: auto;
 	padding: 32px 24px;
 }
 
@@ -81,7 +81,7 @@ strong {
 }
 
 .start-here {
-	padding-left: 24px;
+	margin: 0 auto;
 	width: 33%;
 	text-align: center;
 	display: flex;
@@ -110,12 +110,12 @@ strong {
 	background-color: #246288;
 	border-radius: 4px;
 	transition-duration: 400ms;
-	box-shadow: -1px -1px 1px 1px #4888AC;
+	box-shadow: 0px 1px 1px 1px #4888AC;
 }
 
 .start-cta:hover {
-	box-shadow: -6px -6px 8px 1px #4888AC;
-	transform: translate(6px, 6px);
+	box-shadow: -4px 4px 8px 1px #4888AC;
+	transform: translate(4px, -4px);
 }
 
 .start-cta a {
@@ -182,7 +182,7 @@ strong {
 
 .practice-info {
 	width: 40%;
-	margin-left: 24px;
+	margin-left: 32px;
 	margin-top: 32px;
 }
 
@@ -213,4 +213,9 @@ strong {
 .info-card-text {
 	width: 65%;
 	line-height: 2;
+}
+
+.info-card.a3 {
+	background-color: #9B9B9B;
+	color: white;
 }
