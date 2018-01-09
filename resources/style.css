@@ -402,14 +402,14 @@ footer, footer a {
 	}
 }
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1210px) and (min-width: 470px) {
 	.info-card.a3.thesis-card .info-card-header {
 		line-height: 1.2;
 		margin-bottom: 16px;
 	}
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 950px) and (min-width: 470px) {
 	.hero {
 		display: block;
 		padding: 0;
@@ -432,7 +432,7 @@ footer, footer a {
 	}
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 840px) and (min-width: 470px) {
 	.info-card.a3 .info-card-header {
 		line-height: 1.2;
 		margin-bottom: 16px;
@@ -505,6 +505,10 @@ footer, footer a {
 		padding-bottom: 32px;
 	}
 
+	.start-cta {
+		width: 80%;
+	}
+
 	.practice {
 		display: none;
 	}
@@ -556,6 +560,7 @@ footer, footer a {
 	}
 
 	.info-card-header {
+		padding-top: 16px;
 		font-weight: 600;
 	}
 
