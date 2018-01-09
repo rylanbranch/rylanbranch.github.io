@@ -18,6 +18,11 @@ strong {
 	height: 64px;
 	position: fixed;
 	background-color: #FFFFF7;
+	box-shadow: 0 1px 4px 0px rgba(0, 0, 0, .2);
+}
+
+.mobile-nav, .mobile-nav-item {
+	display: none;
 }
 
 .logo {
@@ -25,14 +30,16 @@ strong {
 	display: flex;
 	align-items: center;
 	padding-left: 24px;
+	font-size: 1.2rem;
 }
 
 .logo span {
-	color: #9B9B9B;
+	color: #9A9A9A;
 }
 
 .logo span strong {
 	color: #4A4A4A;
+	font-weight: 600;
 }
 
 .main-nav {
@@ -55,11 +62,14 @@ strong {
     transition: border 0.2s ease-out,
     color 0.2s ease-out,
     padding 0.2s ease-out;
+    text-decoration: none;
+    color: #464646;
+    font-size: 1.1rem;
 }
 
 .nav-item:hover {
-	padding: 3px 0;
-	border-bottom: 2px solid #464646;
+	padding: 4px 0;
+	border-bottom: 2px solid #666666;
 }
 
 /* Hero styles */
@@ -70,6 +80,7 @@ strong {
 	background-color: #73AFD3;
 	width: auto;
 	padding: 32px 24px;
+	box-shadow: 0 1px 4px 0px rgba(0, 0, 0, .5);
 }
 
 .hero-image {
@@ -90,15 +101,15 @@ strong {
 }
 
 .hero-text h1 {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 2.5rem;
 	padding-bottom: 24px;
 	line-height: 1.2;
 }
 
 .hero-text h3 {
-	font-weight: 700;
-	font-size: 20px;
+	font-weight: 500;
+	font-size: 1.4rem;
 	padding-bottom: 24px;
 	line-height: 1.5;
 }
@@ -114,8 +125,8 @@ strong {
 }
 
 .start-cta:hover {
-	box-shadow: -4px 4px 8px 1px #4888AC;
-	transform: translate(4px, -4px);
+	box-shadow: 0px 4px 8px 1px #4888AC;
+	transform: translate(0px, -4px);
 }
 
 .start-cta a {
@@ -124,6 +135,12 @@ strong {
 	padding: 16px 0;
 	color: white;
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+	.start-cta {
+		width: 100%;
+	}
 }
 
 /* Main content styles */
@@ -138,6 +155,7 @@ strong {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 16px;
 }
 
 .practice {
@@ -157,14 +175,10 @@ strong {
 	width: 100%;
 }
 
-.practice-text {
-	font-family: "Montserrat";
-}
-
 .practice-text h2 {
 	padding-bottom: 24px;
 	font-size: 2rem;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .practice-text p {
@@ -174,11 +188,14 @@ strong {
 .emanuel {
 	padding-top: 30px;
 	font-family: Arial;
-	font-weight: bold;
 	font-size: 0.9rem;
 }
 
 /* Styles for info cards */
+
+.mobile-card-image {
+	display: none;
+}
 
 .practice-info {
 	width: 40%;
@@ -188,7 +205,8 @@ strong {
 
 .info-card {
 	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
-    transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+    transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1),
+    background-color 0.5s linear;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -197,6 +215,7 @@ strong {
 .info-card:hover {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),
 	0 6px 10px 0 rgba(0,0,0,0.3);
+	background-color: #FFFFE8;
 }
 
 .info-card-image {
@@ -212,10 +231,382 @@ strong {
 
 .info-card-text {
 	width: 65%;
-	line-height: 2;
+	line-height: 3;
+}
+
+.info-card a {
+	text-decoration: none;
+	color: #73AFD3;
+}
+
+.info-card.a3 a {
+	color: #246288;
+}
+
+.info-card-body {
+	line-height: 1.5;
 }
 
 .info-card.a3 {
 	background-color: #9B9B9B;
 	color: white;
+}
+
+.info-card-header, #h3-head {
+	font-size: 1.25rem;
+}
+
+/* Course cards styles */
+
+.mobile-course-cards {
+	display: none;
+}
+
+.courses {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #A5CDE5;
+	box-shadow: 0 0px 4px 1px rgba(0, 0, 0, .4);
+}
+
+.start-learning {
+	margin: 32px 0 16px 0;
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.course-cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 56px 32px 56px;
+}
+
+.course {
+	margin: 16px 16px;
+	background-color: white;
+	box-shadow: 0 1px 5px 1px rgba(0,0,0,0.37);
+    transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+    max-width: 30%;
+    overflow: hidden;
+}
+
+.course:hover {
+	box-shadow: 0 2px 2px 1px rgba(0,0,0,0.2),
+	0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.course img {
+	height: auto;
+	max-width: 100%;
+}
+
+.course-info-container {
+	max-width: 532px;
+}
+
+.course-info {
+	padding: 16px;
+	line-height: 2.5;
+}
+
+.course-info-heading {
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+.course-list {
+	line-height: 1.2;
+	font-size: 0.95rem;
+}
+
+/* Thesis exhibit styles */
+
+.exhibit-heading {
+	text-align: center;
+	padding: 32px;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.exhibit-content {
+	display: flex;
+}
+
+.thesis-showcase {
+	max-width: 60%;
+}
+
+.thesis-cards {
+	width: 40%;
+}
+
+.video {
+	margin: 0px 24px 24px 24px;
+}
+
+.video, .video video {
+	max-width: 100%;
+}
+
+.reimagine-urban {
+	padding: 0 24px 32px 24px;
+}
+
+.urban-heading {
+	margin-bottom: 8px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.urban-body {
+	line-height: 1.2;
+}
+
+/* Footer styles */
+
+footer {
+	border-top: 1px solid #dfdfdf;
+	height: 5rem;
+}
+
+footer, footer a {
+	color: #B5B5B5;
+	text-decoration: none;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 24px;
+	max-height: 100%;
+}
+
+.terms-privacy a {
+	font-weight: 600;
+	padding-left: 15px;
+	font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1918px) {
+	.course-info {
+		max-width: 500px;
+	}
+}
+
+@media only screen and (max-width: 1098px) {
+	.course {
+		max-width: 45%;
+	}
+}
+
+@media only screen and (max-width: 1210px) {
+	.info-card.a3.thesis-card .info-card-header {
+		line-height: 1.2;
+		margin-bottom: 16px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.hero {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.hero-image {
+		width: 100%;
+		height: auto;
+		padding-bottom: 32px;
+	}
+
+	.start-here {
+		width: 90%;
+		padding-bottom: 32px;
+	}
+
+	.start-cta {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+	.info-card.a3 .info-card-header {
+		line-height: 1.2;
+		margin-bottom: 16px;
+	}
+}
+
+@media only screen and (max-width: 778px) and (min-width: 470px) {
+	.course {
+		max-width: 83%;
+	}
+
+	.info-card-body {
+		display: none;
+	}
+
+	.info-card-header {
+		line-height: 1.2;
+	}
+}
+
+@media only screen and (max-width: 712px) and (min-width: 470px) {
+	.logo span {
+		display: none;
+	}
+
+	.logo img {
+		padding-right: 16px;
+		height: 55px;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.desktop-nav, .nav-item {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.mobile-nav-item {
+		display: inline;
+	}
+
+	.main-nav {
+		width: 100%;
+	}
+
+	.mobile-nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+	}
+
+	.hero {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.hero-image {
+		width: 100%;
+		height: auto;
+		padding-bottom: 32px;
+	}
+
+	.start-here {
+		width: 90%;
+		padding-bottom: 32px;
+	}
+
+	.practice {
+		display: none;
+	}
+
+	.practice-info {
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 16px;
+	}
+
+	.info-card {
+		box-shadow: none;
+		display: block;
+		width: 100%;
+	}
+
+	.info-card.a3 {
+		margin-bottom: 0;
+		background-color: transparent;
+		color: #464646;
+	}
+
+	.info-card.a3 a {
+		color: #73AFD3;
+	}
+
+	.info-card:hover {
+		box-shadow: none;
+		background-color: transparent;
+	}
+
+	.info-card-image {
+		display: none;
+	}
+
+	.mobile-card-image {
+		display: block;
+		max-width: 100%;
+		margin: 0 16px;
+	}
+
+	.mobile-card-image img {
+		max-width: 100%;
+	}
+
+	.info-card-text {
+		margin: 0 auto;
+	}
+
+	.info-card-header {
+		font-weight: 600;
+	}
+
+	.mobile-course-cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.mobile-course-card {
+		padding: 16px;
+		margin-bottom: 8px;
+		background-color: #9B9B9B;
+		color: white;
+		width: 80%;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	.start-learning {
+		margin-bottom: 16px;
+	}
+
+	.mobile-course-cards:last-child {
+		margin-bottom: 32px;
+	}
+
+	.course-cards {
+		display: none;
+	}
+
+	.reimagine-urban, .thesis-cards {
+		display: none;
+	}
+
+	.thesis-showcase {
+		max-width: 100%;
+	}
+
+	.video {
+		margin: 0px 0px 24px 0px;
+	}
+
+	footer {
+		border: none;
+		display: flex;
+		align-items: center;
+	}
+
+	.terms-privacy {
+		display: none;
+	}
 }

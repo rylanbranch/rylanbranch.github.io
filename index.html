@@ -3,32 +3,44 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="resources/reset.css">
 	<link rel="stylesheet" type="text/css" href="resources/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700,800" rel="stylesheet">
+	<link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
 	<title>Colmar Academy</title>
 </head>
 <body>
+	<!-- Sticky nav -->
 	<header class="sticky-nav">
 		<div class="logo">
-			<img src="resources/images/ic-logo.svg">
+			<img src="resources/images/ic-logo.svg" alt="Comlar logo">
 			<span><strong>COLMAR</strong>ACADEMY</span>
 		</div>
 		<div class="main-nav">
 			<nav class="nav-container">
-				<ul>
-					<li class="nav-item">On campus</li>
-					<li class="nav-item">Online</li>
-					<li class="nav-item">Our companies</li>
-					<li class="nav-item">Sign in</li>
+				<ul class="desktop-nav">
+					<li><a href="#" class="nav-item">On campus</a></li>
+					<li><a href="#" class="nav-item">Online</a></li>
+					<li><a href="#" class="nav-item">Our Companies</a></li>
+					<li><a href="#" class="nav-item">Sign in</a></li>
+				</ul>
+				<ul class="mobile-nav">
+					<img class="mobile-nav-item" src="resources/images/ic-logo.svg">
+					<img class="mobile-nav-item" src="resources/images/ic-on-campus.svg">
+					<img class="mobile-nav-item" src="resources/images/ic-online.svg">
+					<img class="mobile-nav-item" src="resources/images/ic-login.svg">
 				</ul>
 			</nav>
 		</div>
 	</header>
+	<!-- Main content div -->
 	<div class="content">
+		<!-- Hero div -->
 		<div class="hero">
+			<!-- Hero image -->
 			<div class="hero-image">
-				<img src="resources/images/banner.jpg">
+				<img src="resources/images/banner.jpg" alt="students studying outdoors">
 			</div>
+			<!-- Hero text and button -->
 			<div class="start-here">
 				<div class="hero-text">
 					<h1>Learn something <wbr>new everyday</h1>
@@ -39,10 +51,12 @@
 				</div>
 			</div>
 		</div>
+		<!-- Campus info div -->
 		<div class="information">
+			<!-- Main image and text div -->
 			<div class="practice">
 				<div>
-					<img src="resources/images/information-main.jpg">
+					<img src="resources/images/information-main.jpg" alt="Emanuel reading a book">
 				</div>
 				<div class="practice-text">
 					<h2>It doesn't hurt to keep practicing</h2>
@@ -50,36 +64,169 @@
 					<p class="emanuel">Emanuel, Sr Strategist at Hiring.com</p>
 				</div>
 			</div>
+			<!-- Campus info cards -->
 			<div class="practice-info">
 				<div class="info-card a1">
-					<div class="info-card-image"><img src="resources/images/information-orientation.jpg"></div>
+					<div class="info-card-image"><img src="resources/images/information-orientation.jpg" alt="outdoor paths on campus"></div>
+					<div class="mobile-card-image"><img src="resources/images/information-orientation-mobile.jpg"></div>
 					<div class="info-card-text">
-						<h3 class="info-card-header">Orientation Date</h3>
+						<h3 class="info-card-header" id="h3-head">Orientation Date</h3>
 						<p class="info-card-body">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-						<a class="read-more" href="#">Click to read more</a>
+						<a class="read-more" href="#">Read more</a>
 					</div>
 				</div>
 				<div class="info-card a2">
-					<div class="info-card-image"><img src="resources/images/information-orientation.jpg"></div>
+					<div class="info-card-image"><img src="resources/images/information-campus.jpg" alt="classroom interior"></div>
+					<div class="mobile-card-image"><img src="resources/images/information-campus-mobile.jpg"></div>
 					<div class="info-card-text">
-						<h3 class="info-card-header">Orientation Date</h3>
-						<p class="info-card-body">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-						<a class="read-more" href="#">Click to read more</a>
+						<h3 class="info-card-header" id="h3-head">Our Campus</h3>
+						<p class="info-card-body">Find which campus is close by you</p>
+						<a class="read-more" href="#">Read more</a>
 					</div>
 				</div>
 				<div class="info-card a3">
-					<div class="info-card-image"><img src="resources/images/information-orientation.jpg"></div>
+					<div class="info-card-image"><img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack"></div>
+					<div class="mobile-card-image"><img src="resources/images/information-guest-lecture-mobile.jpg"></div>
 					<div class="info-card-text">
-						<h3 class="info-card-header">Orientation Date</h3>
-						<p class="info-card-body">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-						<a href="#" class="read-more">Click to read more</a>
+						<h3 class="info-card-header" id="h3-head">Our guest lecture</h3>
+						<p class="info-card-body">Join a keynote with Oliver Sack about music in medical tratment</p>
+						<a href="#" class="read-more">Read more</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="courses"></div>
-		<div class="exhibit"></div>
+		<!-- Courses info div -->
+		<div class="courses">
+			<div class="start-learning">
+				<h1>Start learning</h1>
+			</div>
+			<!-- Course info cards -->
+			<div class="course-cards">
+				<div class="course">
+					<img src="resources/images/course-software.jpg" alt="computers on a desk">
+					<div class="course-info-container">
+						<div class="course-info">
+							<h3 class="course-info-heading" id="h3-head">Software engineering</h3>
+							<h4 class="courses-list-heading">COURSES</h4>
+							<p class="course-list">Web Development, Mobile Development, iOT, APIs</p>
+						</div>
+					</div>
+				</div>
+				<div class="course">
+					<img src="resources/images/course-computer-art.jpg" alt="hand holding mobile phone">
+					<div class="course-info-container">
+						<div class="course-info">
+							<h3 class="course-info-heading" id="h3-head">Computer art</h3>
+							<h4 class="courses-list-heading">COURSES</h4>
+							<p class="course-list">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+						</div>
+					</div>
+				</div>
+				<div class="course">
+					<img src="resources/images/course-design.jpg" alt="man taking photo with vintage camera">
+					<div class="course-info-container">
+						<div class="course-info">
+							<h3 class="course-info-heading" id="h3-head">Design</h3>
+							<h4 class="courses-list-heading">COURSES</h4>
+							<p class="course-list">User Experience Design, User Research, Visual Design</p>
+						</div>
+					</div>
+				</div>
+				<div class="course">
+					<img src="resources/images/course-data.jpg" alt="laptop with spreadsheet">
+					<div class="course-info-container">
+						<div class="course-info">
+							<h3 class="course-info-heading" id="h3-head">Data</h3>
+							<h4 class="courses-list-heading">COURSES</h4>
+							<p class="course-list">Data Science, Big Data, SQL, Data Visualization</p>
+						</div>
+					</div>
+				</div>
+				<div class="course">
+					<img src="resources/images/course-business.jpg" alt="chess board">
+					<div class="course-info-container">
+						<div class="course-info">
+							<h3 class="course-info-heading" id="h3-head">Business</h3>
+							<h4 class="courses-list-heading">COURSES</h4>
+							<p class="course-list">Product Development, Business Development, Startup</p>
+						</div>
+					</div>
+				</div>
+				<div class="course">
+					<img src="resources/images/course-marketing.jpg" alt="wrist with smart watch">
+					<div class="course-info-container">
+						<div class="course-info">
+							<h3 class="course-info-heading" id="h3-head">Marketing</h3>
+							<h4 class="courses-list-heading">COURSES</h4>
+							<p class="course-list">Analytics, Content Marketing, Mobile Marketing</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-course-cards">
+				<h3 class="mobile-course-card">Software engineering</h3>
+				<h3 class="mobile-course-card">Computer art</h3>
+				<h3 class="mobile-course-card">Design</h3>
+				<h3 class="mobile-course-card">Data</h3>
+				<h3 class="mobile-course-card">Business</h3>
+				<h3 class="mobile-course-card">Marketing</h3>
+			</div>
+		</div>
+		<!-- Thesis exhibits div -->
+		<div class="exhibit">
+			<div class="exhibit-heading">
+				<h2>Thesis exhibit</h2>
+			</div>
+			<!-- Main content div -->
+			<div class="exhibit-content">
+				<!-- Video and descrption -->
+				<div class="thesis-showcase">
+					<div class="video">
+						<video autoplay loop>
+							<source src="resources/videos/thesis.mp4" type="video/mp4">
+							Your browser does not support this video.
+						</video>
+					</div>
+					<div class="reimagine-urban">
+						<h3 class="urban-heading">Reimagine urban</h3>
+						<p class="urban-body">"Morbi at convallis dui. Mauris tortor nibh, ultrices sit amet iaculis in, facilisis non sapien. Mauris a tempus dolor, et pharetra turpis. Aliquam vitae turpis lectus. Aliquam at finibus enim. Quisque consequat tellus augue."</p>
+					</div>
+				</div>
+				<!-- Thesis info cards -->
+				<div class="thesis-cards">
+					<div class="info-card a3 thesis-card">
+						<div class="info-card-image">
+							<img src="resources/images/thesis-fisma.jpg" alt="Oliver Sack">
+						</div>
+						<div class="info-card-text">
+							<h3 class="info-card-header" id="h3-head">Fisma: Design and Prototype</h3>
+							<p class="info-card-body">Design showcase of a new prototype product</p>
+						</div>
+					</div>
+					<div class="info-card a1 thesis-card">
+						<div class="info-card-image">
+							<img src="resources/images/thesis-now-and-then.jpg" alt="outdoor paths on campus">
+						</div>
+						<div class="info-card-text">
+							<h3 class="info-card-header" id="h3-head">Now and then</h3>
+							<p class="info-card-body">Research study about New York</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<footer></footer>
+	<!-- Footer (wow I couldn't guess) -->
+	<footer>
+		<div class="footer-content">
+			<div class="copyright">
+				<p class="copyright-info">&copy; 2016 Colmar Academy. All rights reserved</p>
+			</div>
+			<div class="terms-privacy">
+				<a href="#">Terms</a>
+				<a href="#">Privacy</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
